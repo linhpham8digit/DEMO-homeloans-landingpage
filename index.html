@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>Home loans | Kien Phan, Fundwise Capital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<!-- Where a visitor from the quiz goes back to if they reload this page (see mode.js). -->
+<meta name="kp-quiz" content="https://demo-homeloans-quizz.vercel.app/" />
+<script src="assets/js/mode.js"></script>
+<link rel="stylesheet" href="assets/css/landing.css" />
+</head>
+<body>
+
+
+<main>
+  <!-- 1. Hero + full form -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero__media" id="heroSlides" aria-hidden="true">
+      <img class="hero__slide hero__slide--1 is-active" src="assets/img/hero/slide-1-handshake.webp" alt="" fetchpriority="high" />
+      <img class="hero__slide hero__slide--2" src="assets/img/hero/slide-2-team.webp" alt="" />
+      <img class="hero__slide hero__slide--3" src="assets/img/hero/slide-3-award.webp" alt="" />
+      <img class="hero__slide hero__slide--4" src="assets/img/hero/slide-4-podium.webp" alt="" />
+    </div>
+    <!-- white logo: only shown on the version reached from the quiz, which has no form (the form carries the logo) -->
+    <div class="hero__brand" data-enter><img class="logo" src="assets/img/logo-fundwise-white.png" alt="Fundwise Capital" width="900" height="347" /></div>
+
+      <div class="hero__copy" data-enter>
+        <!-- DRAFT headline: Content writes the final copy. -->
+        <h1 class="hero__headline" id="heroTitle">See your home<br /> loan options</h1>
+        <div class="hero__who-block">
+          <img class="hero__avatar" src="assets/img/kien-avatar-mfaa.jpg" alt="" width="398" height="398" />
+          <div class="hero__who-text">
+            <p class="hero__who-name">Kien Phan</p>
+            <p class="hero__role">Finance Broker, Fundwise Capital Australia <span class="hero__sep" aria-hidden="true">|</span><span class="hero__mfaa">MFAA&nbsp;member</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__proof hero-awards" id="awards" data-enter>
+        <p class="hero-awards__head"><b>Australian Brokerage of the Year</b> Australian Mortgage Awards 2025</p>
+        <div class="hero-awards__stage" id="heroAwards">
+          <div class="hero-awards__set is-active" data-set="0">
+            <div class="hero-awards__row">
+              <img class="hero-awards__badge hero-awards__badge--wide" src="assets/img/awards/award-winner-1.png" alt="Australian Mortgage Awards 2025 Winner, Australian Brokerage of the Year" />
+              <img class="hero-awards__badge hero-awards__badge--wide" src="assets/img/awards/award-winner-2.png" alt="Australian Mortgage Awards 2025 Winner, MFAA Brokerage of the Year, 1 to 5 staff" />
+              <img class="hero-awards__badge hero-awards__badge--round" src="assets/img/awards/award-winner-3.png" alt="MFAA Excellence Awards 2026 State Winner, Finance Broker Business Award" />
+              <img class="hero-awards__badge" src="assets/img/awards/award-winner-4.png" alt="MFAA Excellence Awards 2026 State Winner, Commercial and Equipment Finance Broker Award" />
+            </div>
+          </div>
+          <div class="hero-awards__set" data-set="1" aria-hidden="true">
+            <div class="hero-awards__row">
+              <img class="hero-awards__badge hero-awards__badge--wide" src="assets/img/awards/award-finalist-1.png" alt="Australian Mortgage Awards 2025 Excellence Awardee, La Trobe Financial Broker of the Year, Commercial" />
+              <img class="hero-awards__badge" src="assets/img/awards/award-finalist-2.png" alt="Commercial Finance Awards 2025 Finalist, Customer Service Broker of the Year" />
+              <img class="hero-awards__badge" src="assets/img/awards/award-finalist-3.png" alt="MFAA Excellence Awards 2026 National Finalist, Commercial and Equipment Finance Broker Award" />
+              <img class="hero-awards__badge" src="assets/img/awards/award-finalist-10.png" alt="MFAA Excellence Awards 2026 National Finalist, Finance Broker Business Award" />
+            </div>
+          </div>
+          <div class="hero-awards__set" data-set="2" aria-hidden="true">
+            <div class="hero-awards__row">
+              <img class="hero-awards__badge" src="assets/img/awards/award-finalist-4.png" alt="MFAA Excellence Awards 2026 State Finalist, Diversified Business Award" />
+              <img class="hero-awards__badge" src="assets/img/awards/award-finalist-6.png" alt="MFAA Excellence Awards 2026 State Finalist, Residential Finance Broker Award" />
+              <img class="hero-awards__badge" src="assets/img/awards/award-finalist-8.png" alt="The Adviser Better Business Awards 2026 Finalist, Best Finance Brokerage (Office), VIC/TAS" />
+              <img class="hero-awards__badge" src="assets/img/awards/award-finalist-9.png" alt="The Adviser Better Business Awards 2026 Finalist, Best Residential Broker, VIC/TAS" />
+            </div>
+          </div>
+        </div>
+        <div class="hero-awards__dots" role="group" aria-label="Award groups">
+          <button type="button" class="hero-awards__dot is-active" data-goto="0" aria-label="Show award winner awards" aria-pressed="true"></button>
+          <button type="button" class="hero-awards__dot" data-goto="1" aria-label="Show national finalist awards" aria-pressed="false"></button>
+          <button type="button" class="hero-awards__dot" data-goto="2" aria-label="Show state finalist awards" aria-pressed="false"></button>
+        </div>
+      </div>
+
+      <div class="hero__form" id="book" data-enter>
+        <div class="form-card">
+          <img class="form-card__logo" src="assets/img/logo-fundwise.png" alt="Fundwise Capital" width="900" height="347" />
+          <h2 class="form-card__title">Book your free strategy session</h2>
+
+          <form class="lead-form" id="leadForm" novalidate data-page="home-loans">
+            <label class="f">
+              <span class="f__label">First name*</span>
+              <input type="text" name="first_name" autocomplete="given-name" maxlength="200" required />
+            </label>
+            <label class="f">
+              <span class="f__label">Last name*</span>
+              <input type="text" name="last_name" autocomplete="family-name" maxlength="200" required />
+            </label>
+            <label class="f f--wide-mobile">
+              <span class="f__label">Mobile*</span>
+              <input type="tel" name="mobile" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="04xx xxx xxx" required />
+            </label>
+            <label class="f f--wide-mobile">
+              <span class="f__label">Email*</span>
+              <input type="email" name="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required />
+            </label>
+            <label class="f">
+              <span class="f__label">State*</span>
+              <select name="state" required>
+                <option value="" disabled selected>Select</option>
+                <option>ACT</option><option>NSW</option><option>NT</option><option>QLD</option>
+                <option>SA</option><option>TAS</option><option>VIC</option><option>WA</option>
+              </select>
+            </label>
+            <label class="f">
+              <span class="f__label">Residency*</span>
+              <select name="residency_status" required>
+                <option value="" disabled selected>Select</option>
+                <option>Australian citizen</option>
+                <option>Permanent resident</option>
+                <option>Temporary visa holder</option>
+                <option>Non-resident / foreign investor</option>
+              </select>
+            </label>
+            <label class="f">
+              <span class="f__label">What are you looking to&nbsp;do?*</span>
+              <select name="enquiry_type" required>
+                <option value="" disabled selected>Select</option>
+                <option>Buying a home to live in</option>
+                <option>Buying an investment property</option>
+                <option>Buying a commercial property</option>
+                <option>Refinancing an existing mortgage</option>
+                <option>Something else</option>
+              </select>
+            </label>
+            <label class="f">
+              <span class="f__label">Is this your first&nbsp;home?*</span>
+              <select name="first_home_buyer" required>
+                <option value="" disabled selected>Select</option>
+                <option>Yes, this is my first home</option>
+                <option>No, I&rsquo;ve bought before</option>
+              </select>
+            </label>
+            <fieldset class="yn">
+              <legend>Does an accountant look after your tax? <i>(optional)</i></legend>
+              <div class="yn__opts">
+                <label><input type="radio" name="has_accountant" value="Yes" /><span>Yes</span></label>
+                <label><input type="radio" name="has_accountant" value="No" /><span>No</span></label>
+              </div>
+            </fieldset>
+            <label class="f f--full">
+              <span class="f__label">Anything else we should know? <i>(optional)</i></span>
+              <textarea name="message" rows="1" maxlength="2000"></textarea>
+            </label>
+            <div class="gotcha" aria-hidden="true">
+              <label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+            </div>
+            <p class="form-status" role="status" data-form-status></p>
+            <button type="submit" class="btn">Book my free strategy session</button>
+            <p class="form-note">We&rsquo;ll call you back in under 15 minutes to set up a time with Kien.</p>
+            <p class="form-legal">Free. 45 minutes. No obligation, no lender pitch. Like most Australian brokers, we are paid by the lender on settlement, disclosed in full.</p>
+          </form>
+        </div>
+      </div>
+  </section>
+
+  <!-- 2. Stats -->
+  <section class="wrap" id="next" aria-label="Kien Phan in numbers">
+    <div class="stats">
+      <div class="stat">
+        <span class="icon-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-6h6v6"/></svg></span>
+        <p class="stat__num">$1.1b+</p><p class="stat__cap">in loans settled</p>
+      </div>
+      <div class="stat">
+        <span class="icon-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c1.9.7 3.1 2.5 3.5 5.2"/></svg></span>
+        <p class="stat__num">3,000+</p><p class="stat__cap">clients served</p>
+      </div>
+      <div class="stat">
+        <span class="icon-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <p class="stat__num">15+</p><p class="stat__cap">years in banking, business&nbsp;&amp;&nbsp;finance</p>
+      </div>
+      <div class="stat">
+        <span class="icon-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 13.8L7 22l5-3 5 3-1.5-8.2"/></svg></span>
+        <p class="stat__num">2025</p><p class="stat__cap">Australian Brokerage of the&nbsp;Year</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Reviews: the kienphan.com.au testimonials section, recoloured -->
+  <section class="testimonials" id="reviews" data-reveal aria-labelledby="revTitle">
+    <div class="testimonials__head">
+      <span class="eyebrow eyebrow--bronze">REAL CLIENTS, REAL OUTCOMES</span>
+      <h2 class="testimonials__title" id="revTitle">In their own words.</h2>
+    </div>
+    <div class="reviews">
+      <a class="review-card" href="https://share.google/390pCrVuy6lVlnPod" target="_blank" rel="noopener noreferrer">
+        <div class="review-card__head">
+          <p class="review-card__name">Ky Quan&nbsp;Nguyen</p>
+          <p class="review-card__detail">Refinanced | Hawthorn, VIC</p>
+        </div>
+        <p class="review-card__quote">Thanks Kien and his support team who have been walking us through refinancing process with prompt advice and update at every steps to the successful settlement today. They also pick the right lender meeting our need strategically. Highly&nbsp;recommended!</p>
+        <img class="review-card__icon" src="assets/img/review-arrow.svg" alt="" />
+      </a>
+      <a class="review-card" href="https://share.google/45KIas3UKwX6n448Y" target="_blank" rel="noopener noreferrer">
+        <div class="review-card__head">
+          <p class="review-card__name">Nick Lees</p>
+          <p class="review-card__detail">Commercial Purchase</p>
+        </div>
+        <p class="review-card__quote">Found a way when others couldn&rsquo;t. Thanks Kien and the team for getting the commercial purchase across the&nbsp;line&nbsp;🙏❤️</p>
+        <img class="review-card__icon" src="assets/img/review-arrow.svg" alt="" />
+      </a>
+      <a class="review-card" href="https://www.fundwisecapital.com.au/testimonials" target="_blank" rel="noopener noreferrer">
+        <div class="review-card__head">
+          <p class="review-card__name">Sam</p>
+          <p class="review-card__detail">Commercial/Development Loan<br />Childcare Centre&nbsp;Loan</p>
+        </div>
+        <p class="review-card__quote">&ldquo;Kien is the ultimate professional. He is highly capable and has a breadth of experience in feasibility and&nbsp;financing. The service offering he provides is highly practical, the financial advisory he provides is easily understandable - not many in the City can boast of this level of ability and frank&nbsp;communication.&rdquo;</p>
+        <img class="review-card__icon" src="assets/img/review-arrow.svg" alt="" />
+      </a>
+      <a class="review-card" href="https://maps.app.goo.gl/U2x3PpBThPoV8mjy7" target="_blank" rel="noopener noreferrer">
+        <div class="review-card__head">
+          <p class="review-card__name">Ammy Ph&#7841;m</p>
+          <p class="review-card__detail">Home Loan</p>
+        </div>
+        <p class="review-card__quote">Highly recommend Kien Phan and his team at Fundwise Capital. They were professional, responsive and extremely helpful throughout our home loan process. Kien always explained everything clearly, kept us updated and made the whole process smooth and stress-free. We really appreciate all the hard work and support from Kien and the team. Thank you so much!</p>
+        <img class="review-card__icon" src="assets/img/review-arrow.svg" alt="" />
+      </a>
+      <a class="review-card" href="https://maps.app.goo.gl/hFha3xcuhGBTMSJH7" target="_blank" rel="noopener noreferrer">
+        <div class="review-card__head">
+          <p class="review-card__name">Iriskr Iriskr</p>
+          <p class="review-card__detail">First Home Buyer</p>
+        </div>
+        <p class="review-card__quote">We had a great experience working with Fundwise Capital, especially Kien and Hai, throughout our home-buying journey. They were very professional, responsive and supportive from start to finish.</p>
+        <img class="review-card__icon" src="assets/img/review-arrow.svg" alt="" />
+      </a>
+      <a class="review-card" href="https://maps.app.goo.gl/FfLdqRbPNAqM858bA" target="_blank" rel="noopener noreferrer">
+        <div class="review-card__head">
+          <p class="review-card__name">Thao Le</p>
+          <p class="review-card__detail">Refinance</p>
+        </div>
+        <p class="review-card__quote">Our refinance journey was made smooth and stress-free thanks to the outstanding support of the broker team. They worked tirelessly to secure a better outcome for our family and guided us through every stage with patience, honesty, and&nbsp;expertise.</p>
+        <img class="review-card__icon" src="assets/img/review-arrow.svg" alt="" />
+      </a>
+    </div>
+    <a href="https://maps.app.goo.gl/hb3D3jrEcQQXodLG8" class="link-arrow" target="_blank" rel="noopener noreferrer">Read all reviews on Google <span class="arrow">→</span></a>
+  </section>
+
+  <!-- 4. How I work -->
+  <section class="wrap section-pad-top" id="how-it-works" aria-labelledby="howTitle">
+    <div class="band">
+      <div class="band__copy">
+        <span class="pill-label">How I work</span>
+        <h2 class="section-title" id="howTitle">Four steps, in order. Nothing&nbsp;skipped.</h2>
+        <p class="lede">A loan is a means, not the goal. We move through it the same way every time, so you always know what comes next.</p>
+        <ol class="steps">
+          <li class="step"><span class="step__num">01</span><p class="step__title">Assess</p><p class="step__body">Income, equity, goals and constraints, set out plainly before any&nbsp;recommendation.</p></li>
+          <li class="step"><span class="step__num">02</span><p class="step__title">Strategise</p><p class="step__body">The plan first: structure, offset, term and sequence, shaped for where you are headed.</p></li>
+          <li class="step"><span class="step__num">03</span><p class="step__title">Recommend</p><p class="step__body">A clear comparison across lenders, with the reasoning written down. You decide. We&nbsp;lodge.</p></li>
+          <li class="step"><span class="step__num">04</span><p class="step__title">Stay on it</p><p class="step__body">We review the position as rates, equity and plans move, for as long as you want a&nbsp;partner.</p></li>
+        </ol>
+      </div>
+      <div class="band__media"><img src="assets/img/hero/hero-1-handshake.jpg" alt="Kien Phan receiving an award at the MFAA Excellence Awards 2026" /></div>
+      <div class="band__cta">
+        <a class="btn" href="#book">Book my free strategy session</a>
+        <p class="band__note"><b>Free. 45 minutes.</b> No obligation, no lender pitch.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 5. Footer -->
+<!-- Footer: the kienphan.com.au footer, same layout, in Fundwise colours. -->
+<footer class="footer">
+  <div class="footer__row">
+    <div class="footer__brand">
+      <p class="footer__brand-name">Fundwise Capital</p>
+      <p class="footer__tagline">Property and finance advice for<br />Australian families and investors.<br />Every property, measured.</p>
+    </div>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#awards">Awards</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#how-it-works">How it works</a>
+      <a class="footer__book" href="#book">Book a session</a>
+    </nav>
+  </div>
+  <div class="footer__fine">
+    <p>&copy; 2026 Fundwise Capital. Kien Phan is a credit representative 514862 of Connective Credit Services Pty Ltd (Australian Credit Licence 389328). MFAA member.</p>
+    <p>In it for the long game.</p>
+  </div>
+  <!-- TODO: real privacy policy and credit guide URLs. -->
+  <nav class="footer__legal" aria-label="Legal"><a href="#">Privacy policy</a><a href="#">Credit guide</a></nav>
+</footer>
+
+<script src="assets/js/lead.js" defer></script>
+<script src="assets/js/smooth-scroll.js" defer></script>
+<script src="assets/js/form-a.js" defer></script>
+<script src="assets/js/reviews.js" defer></script>
+<script src="assets/js/hero-awards.js" defer></script>
+<script src="assets/js/hero-slides.js" defer></script>
+</body>
+</html>
