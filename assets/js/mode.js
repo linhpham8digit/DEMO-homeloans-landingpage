@@ -16,5 +16,7 @@
       return;
     }
     html.classList.add("from-quiz");
+    // after-quiz.js is about to replace the headline with the greeting: keep it unseen until it has.
+    html.classList.add("greet-pending");
   } catch (e) { /* old browser: the page simply shows as normal */ }
 })();
